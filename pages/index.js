@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <>
+    <body className={styles.body}>
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
@@ -48,6 +48,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-    </>
+    </body>
   );
 }
