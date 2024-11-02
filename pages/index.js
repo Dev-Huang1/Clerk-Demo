@@ -1,9 +1,18 @@
-import styles from '../styles/Home.module.css';
+// pages/index.js
+import { SignedIn, SignedOut, SignOutButton } from '@clerk/nextjs';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Hello World</h1>
+    <div style={{ padding: '20px' }}>
+      <SignedIn>
+        <h1>Welcome Back!</h1>
+        <SignOutButton />
+      </SignedIn>
+
+      <SignedOut>
+        <h1>Please login</h1>
+        <a href="/signin">Login</a>
+      </SignedOut>
     </div>
   );
 }
