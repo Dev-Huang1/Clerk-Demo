@@ -1,5 +1,6 @@
 // pages/_app.js
 import { ClerkProvider } from '@clerk/nextjs';
+import '../styles/global.css'
 
 function MyApp({ Component, pageProps }) {
   return (
