@@ -1,5 +1,5 @@
 {
-  "name": "my-first-nextjs-app",
+  "name": "clerk-demo",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
